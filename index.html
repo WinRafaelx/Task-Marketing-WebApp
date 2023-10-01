@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LOUNG TAE DAE</title>
+  </head>
+  <body>
+    <!-- Section Cover -->
+    <img src="./img/Cover.png" alt="loung tae dae" class="img-basic" />
+    <div class="Cover">
+      <div class="promotion">
+        <h1>OUR PROMOTION</h1>
+        <h1>BUY 3000฿ GET 10% DISCOUNT</h1>
+      </div>
+      <div class="user" id="checkUser">
+        <button onclick="gotoLogin()">LOG IN</button>
+        <button onclick="gotoSignup()">Sign Up</button>
+      </div>
+    </div>
+    <!-- Section Products -->
+    <div class="Product">
+      <!-- Skin Solution Product -->
+      <div class="skin_sol">
+        <img src="/img/skin_sol/1.png" alt="" height="250" />
+        <div class="skin_sol-text">
+          <h1>SKIN SOLUTION</h1>
+          <h3>Take care of and repair your skin to be radiant</h3>
+          <h3>ฟื้นฟูคืนผิวสวยกระจ่างใสแบบไร้ผลข้างเคียงด้วยสารสกัดธรรมชาติ</h3>
+        </div>
+      </div>
+      <div class="skin_sol-products">
+        <div class="block">
+          <img src="/img/skin_sol/2.png" alt="" />
+          <h4>Deep Advance Serum</h4>
+          <h3>บำรุงผิวหน้าแบบล้ำลึก</h3>
+          <h3>3,750฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(0)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/skin_sol/3.png" alt="" />
+          <h4>Night Repair Serum</h4>
+          <h3>ฟื้นฟูคืนผิวสวยข้ามคืน</h3>
+          <h3>3,250฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(1)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/skin_sol/4.png" alt="" />
+          <h4>Anti Dark Spot Serum</h4>
+          <h3>ลบจุดด่างดำยบนใบหน้า</h3>
+          <h3>2,790฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(2)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/skin_sol/5.png" alt="" />
+          <h4>Anti Wrinkles Serum</h4>
+          <h3>ลบเรือนริ้วรอยให้เรียบเนียน</h3>
+          <h3>2,790฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(3)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/skin_sol/6.png" alt="" />
+          <h4>Advance Moisturizer</h4>
+          <h3>บำรุงผิวให้ชุ่มชื้นนุ่มนวล</h3>
+          <h3>1,850฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(4)"
+          />
+        </div>
+      </div>
+      <!-- UV Protetion Product -->
+      <div class="skin_sol">
+        <img src="/img/UV_Protection/7.png" alt="" height="250" />
+        <div class="skin_sol-text">
+          <h1>UV PROTECTION</h1>
+          <h3>
+            Protect your skin from the sun for a long time and comfortably
+          </h3>
+          <h3>ปกป้องผิวสวยของคุณจากสภาพแดดประเทศไทย</h3>
+        </div>
+      </div>
+      <div class="skin_sol-products">
+        <div class="block">
+          <img src="/img/UV_Protection/8.png" alt="" />
+          <h4>UV sun screen spf 50+</h4>
+          <h3>ปกปิดผิวบอบบาง</h3>
+          <h3>1,250฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(5)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/UV_Protection/9.png" alt="" />
+          <h4>UV Protect Whitetening</h4>
+          <h3>ปกป้องพร้อมผิวใส</h3>
+          <h3>950฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(6)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/UV_Protection/10.png" alt="" />
+          <h4>UV Magic Cover</h4>
+          <h3>ปกป้องผิวเรียบเนียน</h3>
+          <h3>950฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(7)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/UV_Protection/11.png" alt="" class="img-ob" />
+          <h4>UV Soft Cream</h4>
+          <h3>ปกป้องผิวแบบบางเบา</h3>
+          <h3>950฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(8)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/UV_Protection/12.png" alt="" />
+          <h4>UV Extreme Protect</h4>
+          <h3>ปกป้องแดดแรงทั้งวัน</h3>
+          <h3>750฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(9)"
+          />
+        </div>
+      </div>
+      <!-- Cleansing Product -->
+      <div class="skin_sol">
+        <img src="/img/Cleansing/13.png" alt="" height="250" />
+        <div class="skin_sol-text">
+          <h1>Cleansing</h1>
+          <h3>Cleans your skin thoroughly and deeply</h3>
+          <h3>ทำความสะอาดผิวอย่างลำล้ำเพื่อผิวสะอาดอย่างแท้จริง</h3>
+        </div>
+      </div>
+      <div class="skin_sol-products">
+        <div class="block">
+          <img src="/img/Cleansing/14.png" alt="" />
+          <h4>Deep Cleansing Oil</h4>
+          <h3>ทำความสะอาดผิวล้ำลึก</h3>
+          <h3>1,250฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(10)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/Cleansing/15.png" alt="" />
+          <h4>Whitetening Toner</h4>
+          <h3>ปรับสมดุลผิวก่อนผิวบำรุง</h3>
+          <h3>950฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(11)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/Cleansing/16.png" alt="" />
+          <h4>White Magic Foam</h4>
+          <h3>ทำความสะอาดผิวกระจ่างใส</h3>
+          <h3>750฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(12)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/Cleansing/17.png" alt="" />
+          <h4>Body Cleanser</h4>
+          <h3>ทำความสะอาดผิวกายอย่างนุ่มนวล</h3>
+          <h3>550฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(13)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/Cleansing/18.png" alt="" />
+          <h4>Fresh Cleanser Remover</h4>
+          <h3>ล้างเครื่องสำอางอย่างหมดจด</h3>
+          <h3>450฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(14)"
+          />
+        </div>
+      </div>
+      <!-- Shine Your Lip Product -->
+      <div class="skin_sol">
+        <img src="/img/shine your lip/19.png" alt="" height="250" />
+        <div class="skin_sol-text">
+          <h1>SHINE YOUR LIP</h1>
+          <h3>Glow Your Lip All day</h3>
+          <h3>ให้ริมฝีปากคุณสวยฉ่ำน่าสัมผัส</h3>
+        </div>
+      </div>
+      <div class="skin_sol-products">
+        <div class="block">
+          <img src="/img/shine your lip/20.png" alt="" />
+          <h4>Natural Balm</h4>
+          <h3>บำรุงริมฝีปากอย่างนุ่มนวล</h3>
+          <h3>350฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(15)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/shine your lip/21.png" alt="" />
+          <h4>UV Protect Balm</h4>
+          <h3>ปกป้องริมฝีปากกลางแดด</h3>
+          <h3>350฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(16)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/shine your lip/22.png" alt="" />
+          <h4>Gental Lip Balm</h4>
+          <h3>บำรุงริมฝีปากระหว่างวัน</h3>
+          <h3>350฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(17)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/shine your lip/23.png" alt="" />
+          <h4>Glow Your Lip</h4>
+          <h3>ริมฝีปากฉ่ำว้าว</h3>
+          <h3>350฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(18)"
+          />
+        </div>
+        <div class="block">
+          <img src="/img/shine your lip/24.png" alt="" />
+          <h4>Sleeping Balm</h4>
+          <h3>บำรุงริมฝีปากก่อนนอน</h3>
+          <h3>350฿</h3>
+          <img
+            src="/img/shopping button.png"
+            alt=""
+            class="shop_button"
+            onclick="addProd(19)"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Section Last Page -->
+    <img src="/img/Last Page.png" alt="last page" class="last-page" />
+    <!-- Section Shopping List -->
+    <div class="Shop_list">
+      <div class="text-shop">
+        <div>
+          <h1>Skin Solution</h1>
+          <h3>FOR EVERYONE</h3>
+        </div>
+        <div>LOUNG TAE DAE</div>
+      </div>
+      <div class="center">
+        <div class="Cart">Your Cart</div>
+      </div>
+      <div id="orders"></div>
+      <div class="center">
+        <p id="sum">Total: 0</p>
+        <ul id="calculation"></ul>
+        <button>Check Out</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
